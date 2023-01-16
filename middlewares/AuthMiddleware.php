@@ -1,9 +1,9 @@
 <?php
 
-namespace app\core\middlewares;
+namespace sixon\hwFramework\middlewares;
 
-use app\core\Application;
-use app\core\exception\ForbiddenException;
+use sixon\hwFramework\Application;
+use sixon\hwFramework\exception\ForbiddenException;
 
 class AuthMiddleware extends BaseMiddleware
 {

@@ -1,7 +1,7 @@
 <?php
-namespace app\core\Form;
+namespace sixon\hwFramework\Form;
 
-use app\core\Model;
+use sixon\hwFramework\Model;
 class Form
 {
     public static function begin(string $action, $method, bool $uploadFile =false)

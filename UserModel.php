@@ -1,8 +1,8 @@
 <?php
 
-namespace app\core;
+namespace sixon\hwFramework;
 
-use app\core\db\DbModel;
+use sixon\hwFramework\db\DbModel;
 
 abstract class UserModel extends DbModel
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace app\core;
+namespace sixon\hwFramework;
 
-use app\core\middlewares\BaseMiddleware;
+use sixon\hwFramework\middlewares\BaseMiddleware;
 
 class Controller
 {
@@ -10,7 +10,7 @@ class Controller
     public string $action = '';
 
     /**
-     * @var app\core\middlewares\BaseMiddleware[]
+     * @var sixon\hwFramework\middlewares\BaseMiddleware[]
      */
     protected array $middlewares = [];
 

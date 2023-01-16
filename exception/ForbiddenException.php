@@ -1,6 +1,6 @@
 <?php
 
-namespace app\core\exception;
+namespace sixon\hwFramework\exception;
 
 class ForbiddenException extends \Exception
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace app\core;
+namespace sixon\hwFramework;
 
-use app\core\db\Database;
-use app\core\db\DbModel;
+use sixon\hwFramework\db\Database;
+use sixon\hwFramework\db\DbModel;
 
 class Application
 {

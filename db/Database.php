@@ -1,7 +1,7 @@
 <?php
 
-namespace app\core\db;
-use app\core\Application;
+namespace sixon\hwFramework\db;
+use sixon\hwFramework\Application;
 
 class Database
 {

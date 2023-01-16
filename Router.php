@@ -1,7 +1,7 @@
 <?php
 
-namespace app\core;
-use app\core\exception\NotFoundException;
+namespace sixon\hwFramework;
+use sixon\hwFramework\exception\NotFoundException;
 
 class Router
 {

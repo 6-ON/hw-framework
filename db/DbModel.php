@@ -1,9 +1,9 @@
 <?php
 
-namespace app\core\db;
+namespace sixon\hwFramework\db;
 
-use app\core\Application;
-use app\core\Model;
+use sixon\hwFramework\Application;
+use sixon\hwFramework\Model;
 use PDO;
 use PDOStatement;
 

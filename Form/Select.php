@@ -1,8 +1,8 @@
 <?php
 
-namespace app\core\Form;
+namespace sixon\hwFramework\Form;
 
-use app\core\Model;
+use sixon\hwFramework\Model;
 
 class Select
 {

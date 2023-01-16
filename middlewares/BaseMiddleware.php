@@ -1,6 +1,6 @@
 <?php
 
-namespace app\core\middlewares;
+namespace sixon\hwFramework\middlewares;
 
 abstract class BaseMiddleware
 {
