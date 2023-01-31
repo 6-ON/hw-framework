@@ -60,15 +60,22 @@ class Request
                     $body[$key] = filter_input(INPUT_POST, $key, FILTER_SANITIZE_SPECIAL_CHARS);
                 }
             }
-        }
-
-        if ($this->isGet()) {
+        }else if ($this->isGet()) {
             foreach ($_GET as $key => $value) {
                 if (is_array($value)) {
                     $body[$key] = $value;
                     continue;
                 }
                 $body[$key] = filter_input(INPUT_GET, $key, FILTER_SANITIZE_SPECIAL_CHARS);
+            }
+        }else {
+            parse_str(file_get_contents("php://input"),$method_body);
+            foreach ($method_body as $key => $value) {
+                if (is_array($value)) {
+                    $body[$key] = $value;
+                    continue;
+                }
+                $body[$key] = filter_var(INPUT_GET);
             }
         }
 
