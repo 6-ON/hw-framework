@@ -20,6 +20,7 @@ class Request
         return strtolower($_SERVER["REQUEST_METHOD"]);
     }
 
+
     public function isGet(): bool
     {
         return strtolower($_SERVER["REQUEST_METHOD"]) === 'get';
@@ -29,6 +30,21 @@ class Request
     {
         return strtolower($_SERVER["REQUEST_METHOD"]) === 'post';
     }
+
+    public function isPut(): bool
+    {
+        return strtolower($_SERVER["REQUEST_METHOD"]) === 'put';
+    }
+    public function isPatch(): bool
+    {
+        return strtolower($_SERVER["REQUEST_METHOD"]) === 'patch';
+    }
+
+    public function isDelete(): bool
+    {
+        return strtolower($_SERVER["REQUEST_METHOD"]) === 'delete';
+    }
+
 
     public function getBody(): array
     {
