@@ -75,7 +75,7 @@ class Request
                     $body[$key] = $value;
                     continue;
                 }
-                $body[$key] = filter_var(INPUT_GET);
+                $body[$key] = filter_var($value);
             }
         }
 
