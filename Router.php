@@ -1,6 +1,7 @@
 <?php
 
 namespace sixon\hwFramework;
+
 use sixon\hwFramework\exception\NotFoundException;
 
 class Router
@@ -20,14 +21,29 @@ class Router
     }
 
 
-    public function get($path, $callback)
+    public function get($path, $callback): void
     {
         $this->routes['get'][$path] = $callback;
     }
 
-    public function post($path, $callback)
+    public function post($path, $callback): void
     {
         $this->routes['post'][$path] = $callback;
+    }
+
+    public function put($path, $callback): void
+    {
+        $this->routes['put'][$path] = $callback;
+    }
+
+    public function patch($path, $callback): void
+    {
+        $this->routes['patch'][$path] = $callback;
+    }
+
+    public function delete($path, $callback): void
+    {
+        $this->routes['delete'][$path] = $callback;
     }
 
     public function resolve()
@@ -50,7 +66,7 @@ class Router
             Application::$app->controller = $controller;
             $controller->action = $callback[1];
             $callback[0] = $controller;
-            foreach ($controller->getMiddlewares() as $middleware){
+            foreach ($controller->getMiddlewares() as $middleware) {
                 $middleware->execute();
             }
 
