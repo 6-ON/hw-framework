@@ -6,7 +6,9 @@
             "email": "aminhatim6@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+        "ext-pdo": "*"
+    },
     "autoload": {
         "psr-4": {
             "sixon\\hwFramework\\" : "."
